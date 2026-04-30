@@ -97,6 +97,7 @@ Numerical features were inspected using the **IQR method**:
 
 ## 👤 Author
 Ngan (Chloe) Doan
+
 *Personal Project with Assistance of Claude AI*
 * Data Science @ Washington University in St Louis
 * ngan.chloe.doan@gmail.com | c.b.doan@wustl.edu
