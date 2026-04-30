@@ -31,13 +31,34 @@ The EDA notebook covers:
 
 ## 🗺️ Roadmap
 * Problem definition and project setup
-* Exploratory Data Analysis (EDA) *(current progress)*
+* Exploratory Data Analysis (EDA) 
 * Feature engineering
-* Train Logistic Regression baseline
+* Train Logistic Regression baseline *(current progress)*
 * Train Neural Network
 * Model comparison & selection
 * Build and deploy churn prediction app
 
+## 📈 Results
+### Baseline Model - Logistic Regression
+| Metric | No Churn | Churn |
+|--------|----------|-------|
+| **Precision** | 0.90 | 0.51 |
+| **Recall** | 0.72 | 0.78 |
+| **F1 Score** | 0.80 | 0.61 |
+| **Accuracy** | | 0.74 |
+| **ROC-AUC** | | **0.8415** |
+
+### Model Comparison
+| Model | ROC-AUC | F1 (Churn) | Precision (Churn) | Recall (Churn) |
+|-------|---------|------------|-------------------|----------------|
+| Logistic Regression (Baseline) | **0.8415** | 0.61 | 0.51 | 0.78 |
+| Random Forest | TBD | TBD | TBD | TBD |
+
+> 🎯 ** Priority Metric: Recal** - catching actual churners matters
+> more than false alarms in a business context
+
 ## 👤 Author
 Ngan (Chloe) Doan
-ngan.chloe.doan@gmail.com | c.b.doan@wustl.edu
+* Data Science @ Washington University in St Louis
+* ngan.chloe.doan@gmail.com | c.b.doan@wustl.edu
+* LinkedIn: https://www.linkedin.com/in/ngan-doan/
