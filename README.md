@@ -86,15 +86,29 @@ Numerical features were inspected using the **IQR method**:
 | **Accuracy** | | 0.74 |
 | **ROC-AUC** | | **0.8472** |
 
+### Random Forest Model
+| Metric | No Churn | Churn |
+|--------|----------|-------|
+| **Precision** | 0.89 | 0.54 |
+| **Recall** | 0.77 | 0.74 |
+| **F1 Score** | 0.83 | 0.62 |
+| **Accuracy** | | 0.76 |
+| **ROC-AUC** | | **0.8415** |
+
 ### Model Comparison
 | Model | ROC-AUC | F1 (Churn) | Precision (Churn) | Recall (Churn) |
 |-------|---------|------------|-------------------|----------------|
 | Logistic Regression (Baseline) | **0.8472** | 0.61 | 0.51 | 0.78 |
-| Random Forest | TBD | TBD | TBD | TBD |
+| Random Forest | 0.8415 | 0.62 | 0.54 | 0.74 |
 
 > 🎯 ** Priority Metric: Recal** - catching actual churners matters
 > more than false alarms in a business context
 
+* ROC-AUC is nearly identical for both models - both models have the same overall ability to rank churners vs non-churners
+* Precision improved between LR and RF (+0.03) - Random Forest makes slightly fewer false alarms
+* Recall dropped slightly (-0.04) - RF catches a fewer actual churners than LR
+* This is a class precision-recall tradeoff - Random Forest is more conservative about predicting churn.
+  
 ## 👤 Author
 Ngan (Chloe) Doan
 
