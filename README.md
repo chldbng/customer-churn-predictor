@@ -87,23 +87,25 @@ Numerical features were inspected using the **IQR method**:
 | **ROC-AUC** | | **0.8472** |
 
 ### Regularization Linear Regression - Ridge and Lasso Regression
-* *For Ridge Model*
-| Metric | No Churn | Churn |
-|--------|----------|-------|
-| **Precision** | 0.90 | 0.51 |
-| **Recall** | 0.73 | 0.77 |
-| **F1 Score** | 0.80 | 0.61 |
-| **Accuracy** | | 0.74 |
-| **ROC-AUC** | | **0.8469** |
+**Ridge Model**
 
-* *For Lasso Model*
 | Metric | No Churn | Churn |
 |--------|----------|-------|
-| **Precision** | 0.90 | 0.52 |
-| **Recall** | 0.74 | 0.77 |
-| **F1 Score** | 0.81 | 0.62 |
-| **Accuracy** | | 0.75 |
-| **ROC-AUC** | | **0.8462** |
+| Precision | 0.90 | 0.51 |
+| Recall | 0.73 | 0.77 |
+| F1 Score | 0.80 | 0.61 |
+| Accuracy | | 0.74 |
+| ROC-AUC | | 0.8469 |
+
+**Lasso Model**
+
+| Metric | No Churn | Churn |
+|--------|----------|-------|
+| Precision | 0.90 | 0.52 |
+| Recall | 0.74 | 0.77 |
+| F1 Score | 0.81 | 0.62 |
+| Accuracy | | 0.75 |
+| ROC-AUC | | 0.8462 |
 
 ### Random Forest Model
 | Metric | No Churn | Churn |
@@ -114,6 +116,15 @@ Numerical features were inspected using the **IQR method**:
 | **Accuracy** | | 0.76 |
 | **ROC-AUC** | | **0.8415** |
 
+### XGBoost Model
+| Metric | No Churn | Churn |
+|--------|----------|-------|
+| **Precision** | 0.92 | 0.51 |
+| **Recall** | 0.72 | 0.82 |
+| **F1 Score** | 0.81 | 0.63 |
+| **Accuracy** | | 0.75 |
+| **ROC-AUC** | | **0.8465** |
+
 ### Model Comparison
 | Model | ROC-AUC | F1 (Churn) | Precision (Churn) | Recall (Churn) |
 |-------|---------|------------|-------------------|----------------|
@@ -121,6 +132,7 @@ Numerical features were inspected using the **IQR method**:
 | Ridge Regression (Baseline Regularization) | 0.8469 | 0.61 | 0.51 | 0.77 |
 | Lasso Regression (Baseline Regularization) | 0.8462 | 0.62 | 0.52 | 0.77
 | Random Forest | 0.8415 | 0.62 | 0.54 | 0.74 |
+| XGBoost | 0.8465 | 0.62 | 0.54 | 0.74 |
 
 > 🎯 ** Priority Metric: Recal** - catching actual churners matters
 > more than false alarms in a business context
