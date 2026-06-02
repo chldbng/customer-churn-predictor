@@ -141,7 +141,20 @@ Numerical features were inspected using the **IQR method**:
 * Precision improved between LR and RF (+0.03) - Random Forest makes slightly fewer false alarms
 * Recall dropped slightly (-0.04) - RF catches a fewer actual churners than LR
 * This is a class precision-recall tradeoff - Random Forest is more conservative about predicting churn.
-  
+
+## 🤝 Business Insights
+* **Highest Risk Segments:**
+  1. New customers (0-12 months) on month-to-month contracts
+  2. Senior citizens with high monthly carges
+  3. High-value customers with no tech support
+ 
+* **Retention Recommendations by Segment:**
+  1. New customers: Onboarding support + First-year discount
+  2. Senior citizens: Dedicated support line + Simplified plans
+  3. Month-to-month: Incentivize annual contract upgrades
+  4. High-value: Personalized outreach + Premium support
+  5. No tech support: Bundle tech support at reduced price
+
 ## 👤 Author
 Ngan (Chloe) Doan
 
