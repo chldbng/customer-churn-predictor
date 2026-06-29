@@ -132,7 +132,7 @@ Numerical features were inspected using the **IQR method**:
 | Ridge Regression (Baseline Regularization) | 0.8469 | 0.61 | 0.51 | 0.77 |
 | Lasso Regression (Baseline Regularization) | 0.8462 | 0.62 | 0.52 | 0.77
 | Random Forest | 0.8415 | 0.62 | 0.54 | 0.74 |
-| XGBoost | 0.8465 | 0.62 | 0.54 | 0.74 |
+| XGBoost | 0.8465 | 0.63 | 0.51 | 0.82 |
 
 > 🎯 ** Priority Metric: Recal** - catching actual churners matters
 > more than false alarms in a business context
